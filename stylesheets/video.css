@@ -1,0 +1,55 @@
+@import 'styles.css';
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  background-position: top left;
+  background-repeat: repeat-y;
+  background-size: cover;
+  -o-transition: background 0.5s ease-in;
+  -webkit-transition: background 0.5s ease-in;
+  -moz-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+}
+
+.video-container video {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bootom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  -o-transition: opacity 0.5s ease-in;
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  transition: opacity 0.5s ease-in;
+  background: #163342;
+}
+
+.video-container img{
+  display:block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 690px){
+
+  .video-container video {
+    display: block;
+  }
+}
